@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="main/index.css">
+  <link rel="icon" href="https://th.bing.com/th/id/OIP.4FiadNYdgnOUpeFxygp2ZgHaHa?rs=1&pid=ImgDetMain">
+</head>
+<body>
+  <div id="container">
+    <h1>Weather</h1>
+    <form>
+      <input type="text" placeholder="CITY/STATE/COUNTRY" value="indore" id="input" autofocus><button id="search">search</button>
+    </form>
+    <div style="text-align: center;">
+      <h2 id="loading">loading...</h2>
+      <img src="https://clipground.com/images/sunny-day-cartoon-clipart-images-5.png" alt="" width="300" height="187" id="img">
+      <em id="cityName">INDORE</em>,
+      <div id="iconContainer">
+        <span class="iconParent"><i class="fa-solid fa-temperature-three-quarters" id="tempIcon"></i>temperature : <span id="temperature" class="weatherValue"> 48</span>°C .</span>
+        <span class="iconParent"><i class="fa-solid fa-wind"></i>wind speed : <span id="windSpeed" class="weatherValue"> 23 </span>km/h.</span>
+        <span class="iconParent"><i class="fa-solid fa-droplet"></i>humidity : <span id="humidity" class="weatherValue"> 47</span> %.</span>
+        <span class="iconParent"><i class="fa-solid fa-cloud"></i>cloud percentage : <span id="cloud_pct"class="weatherValue"> 47</span> %.</span>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/763962caf7.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
